@@ -1,0 +1,10 @@
+import random
+marks ="+-/*!&$#?=@<>abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+podaj_dlugosc = int(input("podaj długość hasła: "))
+
+passward = ""
+
+for i in range(podaj_dlugosc):
+    passward += random.choice(marks)
+
+print(passward)
